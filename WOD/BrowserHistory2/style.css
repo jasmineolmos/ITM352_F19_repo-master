@@ -1,8 +1,10 @@
-h1 {
- font: "Oswald";
+h1, h2 {
+    font-family: 'Oswald', sans;
 
 }
-p {
- font: "Open sans";
+
+body { 
+    color: darkblue
+    font-family 'Open Sans', sans;
 
 }
