@@ -14,15 +14,18 @@
         var item5 = 'Colgate Classic Toothbrush';
         var quantity5 = 12;
         var price5 = 1.89;
+        /*
         var extended_price1 = quantity1 * price1;
         var extended_price2 = quantity2 * price2;
         var extended_price3 = quantity3 * price3;
         var extended_price4 = quantity4 * price4;
         var extended_price5 = quantity5 * price5;
         var subtotal = extended_price1 + extended_price2 + extended_price3 + extended_price4 + extended_price5;
-        var tax_rate = 0.0575;
-        var tax = tax_rate * subtotal;
-        var total = tax + subtotal;
+        */
+      
+
+        var subtotal = 0;
+         
         </script>
         
         <!DOCTYPE html>
@@ -44,6 +47,8 @@
                             <th style="text-align: center;" width="54%">extended price</th>
                           </tr>
                     <script>
+                       var extendedprice=quantity1*price1;
+
                           document.write(`
                           <tr>
                             <td width="43%">${item1}</td>
@@ -84,6 +89,9 @@
                             <td width="54%">\$${extended_price5}</td>
                           </tr>
                     `);
+                    var tax_rate = 0.0575;
+                     var tax = tax_rate * subtotal;
+                    var total = tax + subtotal;
                  </script>
                      <tr>
                             <td colspan="4" width="100%">&nbsp;</td>
